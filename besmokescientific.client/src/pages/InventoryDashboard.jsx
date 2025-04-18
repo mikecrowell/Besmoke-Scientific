@@ -68,20 +68,20 @@ const InventoryDashboard = () => {
 
     return (
         <div className="page-wrapper">            
-            <Container fluid className="mt-4">
-                <Row>
+            <Container fluid >
+                <Row className="frame-background">
                     <Col>
                         <Banner />
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={3}>
+                    <Col md={2} mt={4} >
                         <SideMenuCard
                             selectedView={selectedView}
                             onSelectView={setSelectedView}
                         />
                     </Col>
-                    <Col md={9}>
+                    <Col md={10}>
                         {selectedView === "report" && (
                             <Container className="text-center">
                                 <Form.Group className="mb-3" controlId="productTypeFilter">
