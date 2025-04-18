@@ -9,21 +9,21 @@ const SideMenuCard = ({ selectedView, onSelectView }) => {
                 <Button
                     variant={selectedView === "report" ? "primary" : "outline-primary"}
                     onClick={() => onSelectView("report")}
-                    className="w-100 mb-2"
+                    className="w-75 mb-2"
                 >
                     Report
                 </Button>
                 <Button
                     variant={selectedView === "inventory" ? "primary" : "outline-primary"}
                     onClick={() => onSelectView("inventory")}
-                    className="w-100 mb-2"
+                    className="w-75 mb-2"
                 >
                     Inventory
                 </Button>
                 <Button
                     variant={selectedView === "products" ? "primary" : "outline-primary"}
                     onClick={() => onSelectView("products")}
-                    className="w-100"
+                    className="w-75"
                 >
                     Products
                 </Button>
